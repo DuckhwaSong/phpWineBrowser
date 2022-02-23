@@ -18,6 +18,7 @@ class CphpWineBrowserApp : public CWinApp
 {
 public:
 	CphpWineBrowserApp() noexcept;
+	virtual ~CphpWineBrowserApp();
 
 
 // 재정의입니다.

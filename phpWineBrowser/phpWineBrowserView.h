@@ -9,7 +9,7 @@ class CphpWineBrowserView : public CHtmlView
 {
 protected: // serialization에서만 만들어집니다.
 	CphpWineBrowserView() noexcept;
-	DECLARE_DYNCREATE(CphpWineBrowserView)
+	DECLARE_DYNCREATE(CphpWineBrowserView);
 
 // 특성입니다.
 public:
@@ -18,6 +18,10 @@ public:
 // 작업입니다.
 public:
 	CString ExecCmd(CString);
+	BOOL ExecDaemon(CString, CString);
+	//static PMIB_TCPTABLE _GetTCPTable();
+	//static int _GetAvailableTCPPort(const u_short , const u_short , const u_short );
+	//BOOL _GetAvailableTCPPort(u_short);
 
 // 재정의입니다.
 public:

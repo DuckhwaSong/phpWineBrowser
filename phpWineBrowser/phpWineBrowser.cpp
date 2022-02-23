@@ -40,6 +40,12 @@ CphpWineBrowserApp::CphpWineBrowserApp() noexcept
 	// InitInstance에 모든 중요한 초기화 작업을 배치합니다.
 }
 
+// 소멸자 정의
+CphpWineBrowserApp::~CphpWineBrowserApp()
+{
+	//AfxMessageBox(_T("phpWine END"));
+}
+
 // 유일한 CphpWineBrowserApp 개체입니다.
 
 CphpWineBrowserApp theApp;
